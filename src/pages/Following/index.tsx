@@ -1,13 +1,27 @@
 import React from 'react';
 import { Text } from 'react-native';
+import  Header  from '../../Components/Header';
 
-import { Container } from './styles';
+import { Wrapper, Container, Main } from './styles';
+
+interface Item{
+  key: string;
+  render: () => JSX.Element;
+  isTitle?: boolean;
+}
 
 const Following: React.FC = () => {
+  React.useMemo(() => {
+    const items
+  } , []);
+
   return (
-    <Container>
-      <Text>Following</Text>
-    </Container>
+    <Wrapper>
+      <Container>
+        <Header />
+        <Main />
+      </Container>
+    </Wrapper>
   );
 };
 
