@@ -1,10 +1,11 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList } from 'react-native';
 import  Header  from '../../Components/Header';
 import  Heading  from '../../Components/Heading';
 import  Title  from '../../Components/Title';
 import  CategoryList  from '../../Components/CategoryList';
 import  StreamList from '../../Components/StreamList';
+import  ChannelList from '../../Components/ChannelList';
 
 import { Wrapper, Container, Main } from './styles';
 
@@ -41,14 +42,14 @@ const Following: React.FC = () => {
         render: () => <Title>Continue Watching</Title>,
         isTitle: true,
       },
-      { key: 'C3', render:() => <View /> },
+      { key: 'C3', render:() => <StreamList /> },
 
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline Channels</Title>,
         isTitle: true,
       },
-      { key: 'C4', render:() => <View /> },
+      { key: 'C4', render:() => <ChannelList /> },
     ];
 
     // Array que contém os indices dos elementos que são títulos
