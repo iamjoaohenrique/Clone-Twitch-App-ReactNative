@@ -43,5 +43,11 @@ export const Info = styled.Text `
 
 export const RightSide = styled.View``;
 
-export const WhiteCircle = styled.View``;
+export const WhiteCircle = styled.View`
+    background: ${colors.black};
+    width: 9px;
+    height: 9px;
+    border-radius: 4.5px;
+    opacity: 0.85; 
+`;
 
